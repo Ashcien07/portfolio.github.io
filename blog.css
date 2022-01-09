@@ -1,0 +1,137 @@
+                        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display');
+                        @import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+                        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+                        @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+                        @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap');
+                        @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+                        * {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        .sidebar {
+                            position: absolute;
+                            background-color: rgb(182, 177, 177);
+                            /* width: 320px; */
+                            height: 100vh;
+                            font-family: 'Cormorant Garamond', serif;
+                            font-weight: bold;
+                        }
+                        
+                        .sidebar nav {
+                            padding: 54px;
+                        }
+                        
+                        .sidebar nav li {
+                            list-style: none;
+                            font-size: 30px;
+                            padding: 33px 0;
+                            transition: 0.3s ease;
+                        }
+                        
+                        .sidebar nav li:hover {
+                            transform: translateY(-5px);
+                        }
+                        
+                        .sidebar nav li a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                        
+                        .main {
+                            /* background-color: ; */
+                            width: 75vw;
+                        }
+                        
+                        .container {
+                            display: flex;
+                        }
+                        
+                        .blogItem {
+                            margin: 30px;
+                            font-family: 'Chilanka', cursive;
+                        }
+                        
+                        .blogItem h2 {
+                            padding-bottom: 15px;
+                            padding-top: 20px;
+                        }
+                        
+                        .blogContainer {
+                            /* margin-right: 284px; */
+                            margin-left: 283px;
+                        }
+                        
+                        .blogContainer h1 {
+                            font-family: 'Cormorant Garamond', serif;
+                            margin: 23px;
+                        }
+                        
+                        .blogItem p {
+                            font-family: 'Source Code Pro', monospace;
+                            padding-left: 10px;
+                        }
+                        
+                        .btn {
+                            padding: 9px 14px;
+                            color: cadetblue;
+                            background-color: cornsilk;
+                            border-radius: 28px;
+                            font-size: 15px;
+                            font-weight: bold;
+                            font-family: 'Lora', serif;
+                            margin: 0 3px;
+                            cursor: pointer;
+                        }
+                        
+                        .btn-sm {
+                            font-size: 14px;
+                            padding: 10px 19px;
+                            margin: 12px 0;
+                            transition: 0.3s ease;
+                        }
+                        
+                        .btn:hover {
+                            background-color: cadetblue;
+                            color: cornsilk;
+                            transform: translateX(5px);
+                        }
+                        
+                        .codepic img {
+                            width: 325px;
+                            height: auto;
+                        }
+                        
+                        .sidebarGo {
+                            transform: translate(-443px, 0px);
+                            position: absolute;
+                        }
+                        
+                        .hamburger {
+                            position: absolute;
+                            cursor: pointer;
+                            top: 10px;
+                            left: 10px;
+                            transition: 0.3s ease;
+                        }
+                        
+                        .hamburger:hover {
+                            transform: translateY(5px);
+                        }
+                        
+                        .cross {
+                            margin-left: 213px;
+                        }
+                        
+                        @media (max-width:1400px) {
+                            * {
+                                /* background-color: rgb(161, 228, 228); */
+                            }
+                            .devPic {
+                                display: none;
+                            }
+                            /* .sidebar {
+                                transform: translate(-443px, 0px);
+                                position: absolute;
+                            } */
+                        }

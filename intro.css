@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display');
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(182, 177, 177);
+    /* width: 270px; */
+    font-family: 'Cormorant Garamond', serif;
+    height: 100vh;
+    font-weight: bold;
+}
+
+.heading h2 {
+    margin-left: -450px;
+}
+
+.sidebar nav {
+    padding: 54px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+    transition: 0.3s ease;
+}
+
+.sidebar nav li:hover {
+    transform: translateY(-5px);
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    /* background-color: ; */
+    width: 85vw;
+}
+
+.container {
+    display: flex;
+}
+
+.devInfo h1 {
+    margin-top: 37px;
+    margin-left: 64px;
+    font-family: 'Lora', serif;
+    font-size: 65px;
+    position: relative;
+    background: rgb(149, 216, 179);
+    max-width: 325px;
+    width: 325px;
+    padding-left: 10px;
+    height: auto;
+    margin: 25px;
+    box-shadow: 0 5px 25px rgb(1 1 1 /40%);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.devInfo {
+    margin-left: 274px;
+}
+
+.devInfo p {
+    margin-left: 64px;
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    background: rgb(149, 216, 179);
+    max-width: 1568px;
+    width: 1568px;
+    padding-left: 10px;
+    height: auto;
+    margin: 25px;
+    box-shadow: 0 5px 25px rgb(1 1 1 /40%);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-info p {
+    margin-left: 34px;
+    margin-right: 34px;
+}
+
+.card-info h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.skillContainer {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 260px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.cardimage img {
+    width: 225px;
+    margin-top: 10px;
+    margin-left: 39px;
+    margin-bottom: 11px;
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.card {
+    position: relative;
+    background: rgb(149, 216, 179);
+    max-width: 325px;
+    width: 325px;
+    padding-left: 10px;
+    height: auto;
+    margin: 25px;
+    box-shadow: 0 5px 25px rgb(1 1 1 /40%);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardimage {
+    max-height: 200px;
+}
+
+.cardimage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-info h2 {
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.card-info {
+    position: relative;
+    color: #222;
+    padding: 10px 20px 20px;
+    margin-top: 47px;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    transition: 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: translateY(5px);
+}
+
+.cross {
+    margin-left: 213px;
+}
+
+@media (max-width:1400px) {
+    * {
+        /* background-color: rgb(161, 228, 228); */
+    }
+    .devPic {
+        display: none;
+    }
+    /* .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+}
+
+.pagination {
+    text-align: center;
+    margin: 30px 30px 60px;
+    user-select: none;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 35%);
+}
+
+.pagination li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 45px;
+}
+
+.previous-page,
+.next-page {
+    background: #0ab1ce;
+    width: 80px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.previous-page:hover {
+    transform: translateX(-5px);
+}
+
+.next-page:hover {
+    transform: translateX(5px);
+}
+
+.previous-page:hover,
+.next-page:hover {
+    background: rgb(160, 137, 137);
+    color: #0ab1c0;
+}
+
+.current-page:hover,
+.dots:hover {
+    color: #ccc;
+    background: rgb(174, 216, 162);
+}
+
+.current-page,
+.dots {
+    background: #ccc;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}

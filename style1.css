@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display');
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(182, 177, 177);
+    /* width: 270px; */
+    height: 100vh;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    /* transition: 0.3s ease; */
+}
+
+.sidebar nav {
+    padding: 54px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+    transition: 0.3s ease;
+}
+
+.sidebar nav li:hover {
+    transform: translateY(-5px);
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    /* background-color: ; */
+    width: 85vw;
+}
+
+.container {
+    display: flex;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    color: cadetblue;
+    background-color: cornsilk;
+    border-radius: 28px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    margin: 0 3px;
+    cursor: pointer;
+    width: 151px;
+    transition: 0.3s ease;
+}
+
+.buttons button:hover {
+    color: cornsilk;
+    background-color: cadetblue;
+    transform: translateY(-10px);
+}
+
+.contactform {
+    padding: 0 34px;
+    padding-top: 6px;
+    position: relative;
+    background: rgb(135, 146, 140);
+    max-width: 1400px;
+    width: 1400px;
+    padding-left: 10px;
+    height: auto;
+    /* margin: 25px; */
+    box-shadow: 0 5px 25px rgb(1 1 1 /40%);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 260px;
+    margin-top: 15px;
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 26vw;
+    border-radius: 8px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+    /* background: transparent; */
+}
+
+#emailHelp {
+    font-size: 11px;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+input#clientjob.form-control {
+    height: 132px;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    transition: 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: translateY(5px);
+}
+
+.cross {
+    margin-left: 213px;
+}
+
+@media (max-width:1400px) {
+    * {
+        /* background-color: rgb(161, 228, 228); */
+    }
+    .devPic {
+        display: none;
+    }
+    /* .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
